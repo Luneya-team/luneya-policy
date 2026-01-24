@@ -88,6 +88,14 @@
             border-radius: 4px;
         }
 
+        .security-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
         .footer {
             background-color: #f8f9ff;
             padding: 30px 40px;
@@ -122,12 +130,12 @@
         <div class="header">
             <h1>🌙 Politique de Confidentialité</h1>
             <p>Application Luneya</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">Dernière mise à jour : 5 décembre 2025</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Dernière mise à jour : 23 janvier 2026</p>
         </div>
 
         <div class="content">
             <div class="highlight">
-                <p><strong>Luneya</strong> s'engage à protéger votre vie privée. Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles lors de l'utilisation de notre application de méditation, histoires audio et musique.</p>
+                <p><strong>Luneya</strong> s'engage à protéger votre vie privée. Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles lors de l'utilisation de notre application de méditation, histoires audio, musique, journaling et gestion du temps.</p>
             </div>
 
             <h2>1. Informations que nous collectons</h2>
@@ -148,15 +156,29 @@
                 <li>Durée d'utilisation de l'application</li>
                 <li>Préférences de contenu (histoires, musique, méditations favorites)</li>
                 <li>Données de progression et statistiques d'utilisation</li>
+                <li>Utilisation du minuteur Pomodoro (durée des sessions, pauses, statistiques de productivité)</li>
                 <li>Informations techniques (type d'appareil, version du système d'exploitation)</li>
             </ul>
 
-            <h3>1.3 Données analytiques</h3>
+            <h3>1.3 Données de journaling</h3>
+            <div class="security-box">
+                <p><strong>🔒 Protection renforcée de vos journaux personnels :</strong></p>
+                <p>Lorsque vous utilisez la fonctionnalité de journaling, nous collectons et stockons vos entrées de journal de manière hautement sécurisée :</p>
+                <ul>
+                    <li><strong>Contenu des journaux</strong> : vos entrées textuelles quotidiennes</li>
+                    <li><strong>Dates et horodatages</strong> : dates de création et modification de vos entrées</li>
+                    <li><strong>Métadonnées</strong> : informations techniques liées à vos journaux</li>
+                </ul>
+                <p><strong>Important :</strong> Tous vos journaux sont chiffrés de bout en bout avant d'être transmis et stockés. Nous utilisons un algorithme de chiffrement avancé pour garantir que seul vous pouvez lire vos entrées personnelles. Même nos serveurs et administrateurs ne peuvent pas accéder au contenu déchiffré de vos journaux.</p>
+            </div>
+
+            <h3>1.4 Données analytiques</h3>
             <p>Nous utilisons Firebase Analytics pour comprendre l'utilisation de l'application :</p>
             <ul>
                 <li>Événements d'interaction avec l'application</li>
                 <li>Données de session (UUID anonymisé)</li>
                 <li>Rapports de crash et erreurs techniques</li>
+                <li>Statistiques d'utilisation des fonctionnalités (méditation, journaling, Pomodoro)</li>
             </ul>
 
             <h2>2. Comment nous utilisons vos informations</h2>
@@ -164,6 +186,8 @@
             <p>Vos données sont utilisées pour :</p>
             <ul>
                 <li><strong>Fournir le service</strong> : gérer votre compte et personnaliser votre expérience</li>
+                <li><strong>Fonctionnalités de journaling</strong> : stocker de manière sécurisée et chiffrée vos entrées personnelles</li>
+                <li><strong>Suivi de productivité</strong> : enregistrer vos sessions Pomodoro et générer des statistiques</li>
                 <li><strong>Améliorer l'application</strong> : analyser l'utilisation pour optimiser les fonctionnalités</li>
                 <li><strong>Communication</strong> : vous envoyer des notifications importantes sur le service</li>
                 <li><strong>Sécurité</strong> : protéger votre compte et prévenir les abus</li>
@@ -173,43 +197,63 @@
             <h2>3. Partage de vos données</h2>
             
             <div class="highlight">
-                <p><strong>Nous ne vendons jamais vos données personnelles.</strong></p>
+                <p><strong>Nous ne vendons jamais vos données personnelles. Vos journaux personnels chiffrés ne sont jamais partagés avec des tiers.</strong></p>
             </div>
 
             <p>Nous partageons vos informations uniquement dans les cas suivants :</p>
             
             <h3>3.1 Prestataires de services</h3>
             <ul>
-                <li><strong>Firebase (Google)</strong> : authentification, base de données, analytics</li>
-                <li><strong>Services cloud</strong> : hébergement et stockage sécurisé</li>
+                <li><strong>Firebase (Google)</strong> : authentification, base de données chiffrée, analytics</li>
+                <li><strong>Services cloud</strong> : hébergement et stockage sécurisé avec chiffrement</li>
             </ul>
+            <p><strong>Note importante :</strong> Vos journaux sont chiffrés avant d'être envoyés à Firebase. Les prestataires stockent uniquement des données chiffrées qu'ils ne peuvent pas déchiffrer.</p>
 
             <h3>3.2 Obligations légales</h3>
-            <p>Nous pouvons divulguer vos informations si requis par la loi ou pour protéger nos droits légaux.</p>
+            <p>Nous pouvons divulguer vos informations si requis par la loi ou pour protéger nos droits légaux. Même dans ce cas, vos journaux personnels restent chiffrés et protégés.</p>
 
             <h2>4. Sécurité de vos données</h2>
             
-            <p>Nous mettons en œuvre des mesures de sécurité pour protéger vos informations :</p>
+            <p>Nous mettons en œuvre des mesures de sécurité avancées pour protéger vos informations :</p>
             <ul>
+                <li><strong>Chiffrement de bout en bout</strong> : tous vos journaux personnels sont chiffrés avant transmission et stockage</li>
                 <li>Chiffrement des données en transit (HTTPS/TLS)</li>
                 <li>Authentification sécurisée via Firebase Auth</li>
                 <li>Accès restreint aux données personnelles</li>
                 <li>Surveillance régulière des systèmes</li>
                 <li>Sessions sécurisées avec UUID de suivi</li>
+                <li>Algorithmes de chiffrement conformes aux standards industriels</li>
             </ul>
+
+            <div class="security-box">
+                <p><strong>🔐 Protection de vos journaux :</strong></p>
+                <p>Le chiffrement de vos journaux garantit que :</p>
+                <ul>
+                    <li>Seul vous pouvez lire vos entrées personnelles</li>
+                    <li>Luneya ne peut pas accéder au contenu déchiffré de vos journaux</li>
+                    <li>En cas de violation de données, vos journaux resteront illisibles pour les tiers</li>
+                    <li>Vos pensées et réflexions personnelles restent totalement privées</li>
+                </ul>
+            </div>
 
             <h2>5. Conservation des données</h2>
             
-            <p>Nous conservons vos données tant que votre compte est actif. Si vous supprimez votre compte, vos données personnelles seront effacées dans un délai de 30 jours, sauf obligation légale de conservation.</p>
+            <p>Nous conservons vos données tant que votre compte est actif. Si vous supprimez votre compte :</p>
+            <ul>
+                <li>Vos données personnelles seront effacées dans un délai de 30 jours</li>
+                <li>Vos journaux chiffrés seront définitivement supprimés sans possibilité de récupération</li>
+                <li>Vos statistiques Pomodoro et de méditation seront supprimées</li>
+                <li>Seules les données anonymisées à des fins statistiques peuvent être conservées, sans lien avec votre identité</li>
+            </ul>
 
             <h2>6. Vos droits</h2>
             
             <p>Conformément au RGPD et aux lois sur la protection des données, vous avez le droit de :</p>
             <ul>
-                <li><strong>Accéder</strong> à vos données personnelles</li>
+                <li><strong>Accéder</strong> à vos données personnelles, y compris vos journaux chiffrés</li>
                 <li><strong>Rectifier</strong> vos informations inexactes</li>
-                <li><strong>Supprimer</strong> votre compte et vos données</li>
-                <li><strong>Exporter</strong> vos données (portabilité)</li>
+                <li><strong>Supprimer</strong> votre compte et toutes vos données, y compris vos journaux</li>
+                <li><strong>Exporter</strong> vos données (portabilité), y compris vos journaux dans un format lisible</li>
                 <li><strong>Vous opposer</strong> au traitement de vos données</li>
                 <li><strong>Retirer votre consentement</strong> à tout moment</li>
             </ul>
@@ -223,6 +267,7 @@
                 <li>Maintenir votre session active</li>
                 <li>Mémoriser vos préférences</li>
                 <li>Analyser l'utilisation de l'application</li>
+                <li>Synchroniser vos données de journaling et Pomodoro entre appareils</li>
             </ul>
 
             <h2>8. Confidentialité des mineurs</h2>
@@ -231,7 +276,7 @@
 
             <h2>9. Transferts internationaux</h2>
             
-            <p>Vos données peuvent être transférées et stockées sur des serveurs situés en dehors de l'Union Européenne, notamment via Firebase/Google Cloud. Ces transferts sont effectués conformément aux réglementations applicables avec des garanties appropriées.</p>
+            <p>Vos données peuvent être transférées et stockées sur des serveurs situés en dehors de l'Union Européenne, notamment via Firebase/Google Cloud. Ces transferts sont effectués conformément aux réglementations applicables avec des garanties appropriées. Vos journaux restent chiffrés pendant le transfert et le stockage, quelle que soit leur localisation géographique.</p>
 
             <h2>10. Modifications de cette politique</h2>
             
@@ -241,7 +286,7 @@
             
             <div class="contact-info">
                 <p><strong>Pour toute question concernant cette politique de confidentialité ou vos données personnelles, contactez-nous :</strong></p>
-                <p>📧 Email : <a href="mailto:team@luneya.gmail.com">team.luneya@gmail.com</a></p>
+                <p>📧 Email : <a href="mailto:team@luneya.gmail.com">team@luneya.gmail.com</a></p>
                 <p>🏢 Développeur : Luneya App</p>
                 <p>📍 France</p>
             </div>
@@ -249,7 +294,7 @@
             <h2>12. Services tiers</h2>
             
             <h3>Firebase (Google)</h3>
-            <p>Notre application utilise les services Firebase pour l'authentification, la base de données et l'analyse. Consultez la politique de confidentialité de Google : <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+            <p>Notre application utilise les services Firebase pour l'authentification, la base de données chiffrée et l'analyse. Consultez la politique de confidentialité de Google : <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
             <h3>Google Sign-In</h3>
             <p>Si vous utilisez Google Sign-In, les conditions de Google s'appliquent : <a href="https://policies.google.com/terms" target="_blank">https://policies.google.com/terms</a></p>
@@ -260,7 +305,7 @@
 
         <div class="footer">
             <p><strong>🌙 Luneya</strong></p>
-            <p>Méditation • Histoires • Musique</p>
+            <p>Méditation • Histoires • Musique • Journaling • Productivité</p>
             <p style="margin-top: 15px; font-size: 0.9em;">© 2026 Luneya. Tous droits réservés.</p>
         </div>
     </div>
